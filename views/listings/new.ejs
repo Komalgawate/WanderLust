@@ -1,0 +1,59 @@
+<%- include("../layout/boilerplate.ejs") %>
+<body>
+    <h3 style="margin-left:9rem">Create a New Listings</h3>
+<div class="row">
+    <div class="col-8">
+    <form method="POST" action="/listings" 
+    novalidate class="needs-validation" enctype="multipart/form-data" >
+        <div class="mb-3">
+            <label for="title" 
+            class="form-label">Title</label>
+            <input name="listing[title]"
+            placeholder="enter title" 
+            type="text" class="form-control"
+            required>
+            <div class="valid-feedback">Title Looks Good</div>
+        </div>
+       <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <i><textarea name="listing[description]"
+         type="text" class="form-control" required></textarea></i>
+         <div class="invalid-feedback">Description should be valid</div>
+       </div>
+       
+       <div class="mb-3">
+        <label for="image"
+         class="form-label">Upload listing Image</label>
+        <input name="listing[image]"
+     
+         type="file"
+        class="form-control" required/>
+       </div>
+
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input name="listing[price]" class="form-control" 
+            placeholder="enter price" type="number" required>
+            <div class="invalid-feedback">Price should be valid</div>
+        </div>
+        <div class="mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input name="listing[country]"
+             class="form-control" placeholder="enter country" type="text" required>
+             <div class="invalid-feedback">Country should be valid</div>
+        </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Location</label>
+        <input name="listing[location]" placeholder="enter location" 
+        type="text" class="form-control" required>
+        <div class="invalid-feedback">Location should be valid</div>
+      </div>
+    <button class=" btn btn-dark" style="background-color: #fe424d;
+    border: none; color:white;">Add</button>
+    </form>
+</div>
+</div>
+
+<script src="/js/script.js"></script>
+<%-include("../includes/footer.ejs")  %>
+</body>

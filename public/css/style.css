@@ -1,0 +1,190 @@
+body{
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/* navbar  */
+.navbar{
+    height: 4rem;
+   background-color: white;
+}
+.fa-compass{
+    color:#fe424d;
+    font-size: 2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-link a
+{
+   text-decoration: none;
+   color:#222222;
+
+}
+.f-info-link a:hover{
+   text-decoration: underline;
+}
+.f-info{
+    display: flex;
+    height: 8rem;
+    background-color: #ebebeb;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    text-align: center;
+}
+.f-info-link,
+.f-info-social,
+.f-info-brand{
+    width: 100%;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-social i{
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+ .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+.card-review {
+    width: 18rem;
+    margin: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border: 2px solid rgb(212, 211, 211);
+    border-radius: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+.card-img-overlay{
+    opacity: 0;
+
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem !important;
+    width: 100% !important;
+}
+
+.card-body {
+    padding: 0;
+    text-align: center;
+}
+
+.card-text p{
+    font-weight: 400 !important;
+}
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+
+.alert {
+    width: 600px; /* Adjust width as needed */
+    height: 28px; /* Adjust height as needed */
+    margin: auto ; /* Center the alert horizontally */
+    padding: 15px; /* Adjust padding for better appearance */
+    text-align: center; /* Center the text */
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  }
+  
+  h4 {
+    margin: 0; /* Remove default margin */
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+    margin: 0; /* Remove default margin */
+}
+
+footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    background-color: #f8f9fa; /* Example background color */
+    padding-top: 20px; 
+    text-align: center; /* Center align text */
+}
+
+.f-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the footer content */
+}
+
+.f-info-social i {
+    margin: 0 10px; /* Add some spacing between social icons */
+    font-size: 1.5em; /* Adjust icon size */
+}
+
+.f-info-link a {
+    margin: 0 10px; /* Add spacing between links */
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Link color */
+}
+
+.f-info-link a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* filters */
+#filters{
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .filter{
+        text-align: center;
+        margin-right: 1.3rem;
+        font-size: 0.8rem;
+        opacity: 0.8;
+  }
+  .filter:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  .tax-info{
+    display: none;
+  }
+  .tax-toggle{
+    border: 1px solid black;
+    border-radius: 1rem;
+    height: 2.3rem;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  .form-check-label{
+    margin-left: 1rem;
+  }
+
+  
